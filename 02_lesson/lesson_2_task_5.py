@@ -1,14 +1,14 @@
-def month_of_season(month):
+def month_to_season(month):
     if 3 <= month <= 5:
-        return "Spring"
+        return "Весна"
     if 6 <= month <= 8:
-        return "Summer"
+        return "Лето"
     if 9 <= month <= 11:
-        return "Autumn"
+        return "Осень"
     if month in (1, 2, 12):
-        return "Winter"
+        return "Зима"
     return "неверный номер месяца"
 
 
 month = int(input("Введите номер месяца (1-12): "))
-print(month_of_season(month))
+print(month_to_season(month))

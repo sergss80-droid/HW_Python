@@ -10,7 +10,7 @@ def test_multiple_elements():
 
     assert len(all_links) == 9
 
-    for index, link in enumerate(all_links, start=1):
+    for index, link in enumerate(all_links, start=0):
         assert link.is_displayed()
 
     driver.quit()

@@ -13,4 +13,6 @@ def test_multiple_elements():
     for index, link in enumerate(all_links, start=0):
         assert link.is_displayed()
 
+    assert "1" in all_links[0].text
+
     driver.quit()
